@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cove Tea</title>
+</head>
+<body>
+    <header>
+        <img class="smaller-logo animated" src="content://com.android.providers.media.documents/document/image%3A1000012405" alt="Your Milk Tea Shop Logo">
+        <marquee behavior="scroll" direction="left" scrollamount="15">
+            <h1>Welcome to Cove Tea</h1>
+        </marquee>
+        <p>Enjoy the Best Milk Tea in Town</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#products">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section id="products">
+        <h2>Our Menu</h2>
+        <div class="product">
+            <img src="content://com.android.providers.media.documents/document/image%3A1000012406" alt="Classic Milk Tea">
+            <h3>Classic Milk Tea</h3>
+            <p>Price: Php 100.00</p>
+            <button onclick="addToCart('Classic Milk Tea', 100.00)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="content://com.android.providers.media.documents/document/image%3A1000012408" alt="Taro Milk Tea">
+            <h3>Taro Milk Tea</h3>
+            <p>Price: Php 120.00</p>
+            <button onclick="addToCart('Taro Milk Tea', 120.00)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="content://com.android.providers.media.documents/document/image%3A1000012409" alt="Matcha Milk Tea">
+            <h3>Matcha Milk Tea</h3>
+            <p>Price: Php 110.00</p>
+            <button onclick="addToCart('Matcha Milk Tea', 110.00)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="content://com.android.providers.media.documents/document/image%3A1000012410" alt="Honeydew Milk Tea">
+            <h3>Honeydew Milk Tea</h3>
+            <p>Price: Php 130.00</p>
+            <button onclick="addToCart('Honeydew Milk Tea', 130.00)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are your go-to destination for the most delicious milk tea in town. Discover a world of flavors and quality ingredients. <a href="#contact">Contact us</a> to learn more.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to contact us:</p>
+        <p>Email: <a href="mailto:covetea@milkteashop.com">covetea@milkteashop.com</a></p>
+        <p>Phone: 09617619605</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cove Tea </p>
+    </footer>
+
+    <!-- Shopping Cart -->
+    <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+        </ul>
+        <p>Total: Php <span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <!-- Button for Curriculum Vitae -->
+    <button id="cvButton" onclick="navigateToCV()">Curriculum Vitae</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
