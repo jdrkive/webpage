@@ -107,15 +107,15 @@ button:hover {
 @keyframes logoAnimation {
     0% {
         transform: scale(1);
-        content: url('content://com.android.providers.media.documents/document/image%3A1000012405');
+        content: url('logo1.png');
     }
     50% {
         transform: scale(1.5);
-        content: url('content://com.android.providers.media.documents/document/image%3A1000012412');
+        content: url('logo2.png');
     }
     100% {
         transform: scale(1);
-        content: url('content://com.android.providers.media.documents/document/image%3A1000012405');
+        content: url('logo1.png');
     }
 }
 
